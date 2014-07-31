@@ -6,6 +6,7 @@ import java.util.HashMap;
 import pyp.navigation.R;
 import pyp.navigation.association.AssociationFragment;
 import pyp.navigation.home.HomeFragment;
+import pyp.navigation.login.LoginFragment;
 import pyp.navigation.main.MainActivity;
 import pyp.navigation.map.MapFragment;
 import android.app.Activity;
@@ -137,8 +138,8 @@ public class LeftMenuFragment extends Fragment implements OnItemClickListener, O
 	public void onClick(View v) {
 		switch(v.getId()) {
 		case R.id.main_slidingmenu_head_avatarframe_avatar:
-			Log.i("qsuron", "登录-技术人员不要命开发中...");
-			Toast.makeText(this.getActivity(), "登录-技术人员不要命开发中...", Toast.LENGTH_SHORT).show();
+			Log.i("chenzj", "登录");
+			parentActivity.changeFragment(LoginFragment.class.getName());
 			break;
 		case R.id.main_slidingmenu_bottom_exit:
 			Log.i("qsuron", "退出程序");

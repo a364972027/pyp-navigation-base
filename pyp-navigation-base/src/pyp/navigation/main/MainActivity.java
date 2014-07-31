@@ -5,6 +5,8 @@ import pyp.navigation.association.AssociationFragment;
 import pyp.navigation.association.bean.Association;
 import pyp.navigation.association.detail.AssociationDetailFragment;
 import pyp.navigation.home.HomeFragment;
+import pyp.navigation.login.LoginFragment;
+import pyp.navigation.login.RegisterFragment;
 import pyp.navigation.main.menu.LeftMenuFragment;
 import pyp.navigation.main.menu.RightMenuFragment;
 import pyp.navigation.map.MapFragment;
@@ -54,6 +56,8 @@ public class MainActivity extends SlidingFragmentActivity implements ActionBar.T
 	private final SettingFragment mSettingFragment = new SettingFragment();
 	private final AssociationFragment mAssociationFragment = new AssociationFragment();
 	private final AssociationDetailFragment mAssociationDetailFragment = new AssociationDetailFragment();
+	private final LoginFragment mLoginFragment = new LoginFragment();
+	private final RegisterFragment mRegisterFragment = new RegisterFragment();
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -201,10 +205,14 @@ public class MainActivity extends SlidingFragmentActivity implements ActionBar.T
 		ft.add(R.id.content_frame, mSettingFragment, SettingFragment.class.getName());
 		ft.add(R.id.content_frame, mAssociationFragment, AssociationFragment.class.getName());
 		ft.add(R.id.content_frame, mAssociationDetailFragment, AssociationDetailFragment.class.getName());
+		ft.add(R.id.content_frame, mLoginFragment, LoginFragment.class.getName());
+		ft.add(R.id.content_frame, mRegisterFragment, RegisterFragment.class.getName());
 		ft.hide(mAssociationFragment);
 		ft.hide(mMapFragment);
 		ft.hide(mSettingFragment);
 		ft.hide(mAssociationDetailFragment);
+		ft.hide(mLoginFragment);
+		ft.hide(mRegisterFragment);
 		ft.commit();
 	}
 	
@@ -227,6 +235,8 @@ public class MainActivity extends SlidingFragmentActivity implements ActionBar.T
 			ft.hide(mSettingFragment);
 			ft.hide(mAssociationDetailFragment);
 			ft.hide(mHomeFragment);
+			ft.hide(mLoginFragment);
+			ft.hide(mRegisterFragment);
 			ft.show(mFragmentManager.findFragmentByTag(mFragment));
 			ft.commit();
 			changeTouchMode(mFragment);

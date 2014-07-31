@@ -46,6 +46,21 @@
     <string name="main_slidingmenu_bottom_exit_text">退出程序</string>
     
     
+    <!-- 登录界面 -->
+    <string name="student_no">学号</string>
+    <string name="password">密码</string>
+    <string name="new_regedit">新注册</string>
+    <string name="find_password">找回密码</string>
+    <string name="login">登录</string>
+    
+     <!-- 退出程序提示界面 -->
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    
+    
     
     
 </resources>

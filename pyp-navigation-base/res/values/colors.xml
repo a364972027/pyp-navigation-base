@@ -38,8 +38,15 @@
     <color name="page_viewer_margin_color">#007800</color>
 
 
-    
-
+    <!-- For Register -->
+	<color name="color_262626">#ff262626</color>
+	<color name="color_E8E8E8">#ffe8e8e8</color>
+	
+	<!-- For Register Select photo -->
+	<color name="transparent_30">#30000000</color>
+	<color name="color_787876">#ff787876</color>
+	<color name="color_6888b4">#ff6888b4</color>
+	<color name="color_F3F0EF">#fff3f0ef</color>
     
 </resources>
 
